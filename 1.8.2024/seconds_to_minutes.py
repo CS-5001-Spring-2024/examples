@@ -17,7 +17,33 @@ You entered 90 seconds.
 """
 
 def main():
-	pass	
+	# get a number from the user
+	seconds = int(input('Enter a number of seconds: '))
+	# print(type(seconds))
+	# * make sure what we got is a positive integer
+	if seconds > 0:	
+		# turn seconds into minutes
+		# -- divide seconds by 60 and store in a new variable
+		# -- + - * / //
+		minutes = seconds / 60
+
+		# output our result
+		print(f'{seconds} seconds is {minutes} minutes')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 if __name__ == '__main__':
 	main()	
