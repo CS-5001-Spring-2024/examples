@@ -29,7 +29,8 @@ def main():
 
 		# output our result
 		print(f'{seconds} seconds is {minutes} minutes')
-
+	else:
+		print(f'Seconds must be positive.')
 
 
 
