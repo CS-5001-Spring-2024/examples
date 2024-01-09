@@ -20,6 +20,7 @@ def main():
 	# get a number from the user
 	seconds = int(input('Enter a number of seconds: '))
 	# print(type(seconds))
+	
 	# * make sure what we got is a positive integer
 	if seconds > 0:	
 		# turn seconds into minutes
