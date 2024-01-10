@@ -11,7 +11,8 @@ def main():
 	# # 'Number is not small'
 	print('==================')
 	print('Exercise 1')
-	print('==================')
+	print('==================')	
+
 
 	# # Exercise 2
 	# # if the value stored in the variable number
