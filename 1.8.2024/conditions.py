@@ -12,6 +12,11 @@ def main():
 	print('==================')
 	print('Exercise 1')
 	print('==================')	
+	number = 45
+	if number < 10:
+		print('Number is small')
+	else:
+		print('Number is not small')
 
 
 	# # Exercise 2
@@ -25,6 +30,12 @@ def main():
 	print('\n==================')
 	print('Exercise 2')
 	print('==================')
+	if number > 15:
+		print('Seems like a big number')
+		print('Are you sure that\'s right?')
+	else:
+		print('Good job!')
+		print('You picked a good number.')
 
 	# # Exercise 3
 	# # if the string stored in the variable animal
@@ -34,6 +45,13 @@ def main():
 	print('\n==================')
 	print('Exercise 3')
 	print('==================')
+	animal = 'cow'
+	if animal == 'dog':
+		print('woof')
+	elif animal == 'cow':
+		print('moo')
+	elif animal == 'bird':
+		print('chirp')
 
 
 	# Exercise 4

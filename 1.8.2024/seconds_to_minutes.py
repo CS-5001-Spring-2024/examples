@@ -20,7 +20,7 @@ def main():
 	# get a number from the user
 	seconds = int(input('Enter a number of seconds: '))
 	# print(type(seconds))
-	
+
 	# * make sure what we got is a positive integer
 	if seconds > 0:	
 		# turn seconds into minutes
@@ -31,7 +31,15 @@ def main():
 		# output our result
 		print(f'{seconds} seconds is {minutes} minutes')
 	else:
-		print(f'Seconds must be positive.')
+		print(f'Seconds is negative.')
+		if seconds > -10:
+			print('not too negative')
+		elif seconds > -100:
+			print('moderately negative')
+		else:
+			print('very negative')
+
+
 
 
 
