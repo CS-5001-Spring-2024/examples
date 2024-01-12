@@ -22,6 +22,12 @@ def main():
 	# print(type(seconds))
 
 	# * make sure what we got is a positive integer
+	# < > <= >= == 
+	
+	# seconds > 0 -- turn seconds into minutes
+	# seconds between -100 and 0 -- seconds is slightly negative
+	# seconds is smaller than -100 -- seconds is very negative
+
 	if seconds > 0:	
 		# turn seconds into minutes
 		# -- divide seconds by 60 and store in a new variable
@@ -31,13 +37,13 @@ def main():
 		# output our result
 		print(f'{seconds} seconds is {minutes} minutes')
 	else:
-		print(f'Seconds is negative.')
-		if seconds > -10:
-			print('not too negative')
-		elif seconds > -100:
-			print('moderately negative')
+		print(f'Seconds is negative...but...')
+		if seconds > -100:
+			print(f'Seconds is slightly negative.')
+		elif seconds > -200:
+			print(f'Seconds is pretty negative.')
 		else:
-			print('very negative')
+			print(f'Seconds is very negative.')
 
 
 
