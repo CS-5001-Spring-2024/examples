@@ -69,6 +69,23 @@ def main():
 	print('\n==================')
 	print('Exercise 4')
 	print('==================')
+	first_name = 'Sonny'
+	last_name = 'Rawlins'
+	if first_name == 'Sami' and last_name == 'Rollins':
+		print('Hey, that\'s my name')
+	else:
+		if first_name == 'Sami':
+			print('Cool first name...haha')	
+		elif last_name == 'Rollins':
+			print('Cool last_name')
+
+	# elif first_name == 'Sami':
+	# 	print('Cool first name...haha')
+	# elif last_name == 'Rollins':
+	# 	print('Cool last name')
+	# else:
+	# 	print('Thanks for playing...')
+
 
 	# Exercise 5
 	# if the value stored in the variable user_choice is not a valid rock, paper, scissors choice print
@@ -79,6 +96,14 @@ def main():
 	print('\n==================')
 	print('Exercise 5')
 	print('==================')
+	user_choice = 'rock'
+	if (user_choice != 'rock' 
+		and user_choice != 'scissors' 
+		and user_choice != 'paper'):
+		print('Invalid choice')
+	else:
+		print('Valid choice')
+
 
 	# Exercise 6
 	# if the value stored in the variable user_choice is not a valid rock, paper, scissors choice print
@@ -89,7 +114,13 @@ def main():
 	print('\n==================')
 	print('Exercise 6')
 	print('==================')
-
+	user_choice = 'rock'
+	if not(user_choice == 'rock' 
+		or user_choice == 'scissors' 
+		or user_choice == 'paper'):
+		print('Invalid choice')
+	else:
+		print('Valid choice')
 
 if __name__ == '__main__':
 	main()

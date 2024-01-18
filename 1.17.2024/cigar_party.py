@@ -3,13 +3,18 @@ When squirrels get together for a party, they like to have cigars. A squirrel pa
 """
 
 def cigar_party(cigars: int, is_weekend: bool) -> bool:
-	pass
+	if cigars >= 40 and cigars <= 60:
+		return True
+	elif cigars >= 40 and is_weekend:
+		return True
+	return False
 
 def main():
  	# How many tests do we need to do
 	# to ensure that our function
 	# is correct?
-	pass
+	# we came up with 6 cases in class!
+	print(cigar_party(85, True))
 
 if __name__ == '__main__':
 	main()

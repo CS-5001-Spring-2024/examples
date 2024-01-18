@@ -8,7 +8,9 @@ def welcome():
 	You can print this documentation using 
 	print(welcome.__doc__)
 	"""
-	pass
+	print('Hello class.')
+	print('Thanks for coming back today!')
+	print('Looking forward to a fun semester.')
 
 def greet_by_name(name: str):
 	"""Exercise 2:
@@ -17,7 +19,7 @@ def greet_by_name(name: str):
 	name: str
 		name of the user
 	"""
-	pass
+	print('Hello ' + name)
 
 def get_greeting() -> str:
 	"""Exercise 3:
@@ -26,9 +28,10 @@ def get_greeting() -> str:
 	str 
 		greeting provided by the user
 	"""
-	pass
+	greeting = input('What greeting would you like to use? ')
+	return greeting
 
-def welcome_by_name_with_greeting(name: str, greeting: str):
+def welcome_by_name_with_greeting(name: str, greeting: str=None):
 	"""Exercise 4:
 	A function to welcome a user by name with a 
 	specific greeting.
@@ -38,10 +41,18 @@ def welcome_by_name_with_greeting(name: str, greeting: str):
 	greeting: str
 		greeting to use
 	"""
-	pass
+	if greeting == None:
+		greeting = get_greeting()
+	# print(f'{greeting} {name}')
+	print(greeting + ' ' + name)
+
 
 def main():
-	pass
+	welcome_by_name_with_greeting(3, 'Hello')
 
 if __name__ == '__main__':
 	main()
+
+
+
+
