@@ -6,14 +6,14 @@ def cigar_party(cigars: int, is_weekend: bool) -> bool:
 	"""Return True if the party is successful and False
 	otherwise.
 	"""
-	# Option 1
+	# Option 1	
 	# if cigars >= 40 and cigars <= 60:
 	# 	return True
 	# elif cigars >= 40 and is_weekend:
 	# 	return True
 	# return False
 
-	# Option 2
+	# # Option 2
 	return (40 <= cigars <= 60 or (cigars >= 40 and is_weekend))
 
 
@@ -28,6 +28,7 @@ def main():
 	print(f'cigar_party(55, False) - expected True - actual {cigar_party(55, False)}')
 	print(f'cigar_party(75, True) - expected True - actual {cigar_party(75, True)}')
 	print(f'cigar_party(75, False) - expected False - actual {cigar_party(75, False)}')
+
 
 if __name__ == '__main__':
 	main()
