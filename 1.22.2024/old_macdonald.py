@@ -10,3 +10,46 @@ Write a program (remember that programs have a main() function) to print the lyr
 
 # TODO: discuss the string split function
 
+def sing(animal: str, sound: str):
+# def sing(animal_and_sound: tuple[str, str]):	
+	# animal = animal_and_sound[0]
+	# sound = animal_and_sound[1]
+
+	print('Old MacDonald had a farm, ee-igh, ee-igh, oh!')
+	print(f'And on that farm he had a {animal}, ee-igh, ee-igh, oh!')
+	print(f'With a {sound}, {sound} here and a {sound}, {sound} there.')
+	print(f'Here a {sound}, there a {sound}, everywhere a {sound}, {sound}.')
+	print('Old MacDonald had a farm, ee-igh, ee-igh, oh!')
+
+# ask for an input
+def ask_animal_and_sound() -> tuple[str, str]:
+	# animal = input('Enter animal name: ')
+	# sound = input('Enter sound: ')
+	result = input('Give me an animal and a sound: ')
+	animal, sound = result.split()
+	return animal, sound
+
+def main():
+	# ('pig', 'oink')
+	# print(ask_animal_and_sound())
+
+	# sing(ask_animal_and_sound())
+
+	animal, sound = ask_animal_and_sound()
+	sing(animal, sound)
+
+	# animal, sound = ask_animal_and_sound()
+	# sing(animal, sound)
+
+	# animal, sound = ask_animal_and_sound()
+	# sing(animal, sound)
+
+	# animal, sound = ask_animal_and_sound()
+	# sing(animal, sound)
+
+	# animal, sound = ask_animal_and_sound()
+	# sing(animal, sound)
+
+
+if __name__ == '__main__':
+	main()
