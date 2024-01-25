@@ -21,12 +21,26 @@ LOW = 1
 HIGH = 10
 
 def get_secret_number() -> int:
+	"""Randomly generates a secret number
+	in the range LOW to HIGH.
+	Returns secret value -- int	
+	"""
 	return random.randint(LOW, HIGH)
 
 def get_user_guess() -> int:
+	"""Prompts the user for a guess.
+	Returns integer value of guess.
+	"""
 	return int(input('Guess my number: '))
 
 def check_winner(secret:int, user_guess:int) -> bool:
+	"""Determines whether the user has won.
+	Parameters:
+	secret - int
+	user_guess - int
+	Returns:
+	bool value True if the user has won False otherwise
+	"""
 	if secret == user_guess:
 		print('Winner winner')
 		return True

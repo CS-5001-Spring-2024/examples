@@ -1,3 +1,5 @@
+ACTUAL_PASSWORD = 'hello123'
+
 def login():
 	"""Implement a function that prompts a 
 	user for a password until the actual 
@@ -7,8 +9,26 @@ def login():
 	Step 2: allow a maximum of three attempts.
 
 	"""
-	pass
-	
+	matched = False
+	attempts = 0
+
+	while not matched and attempts < 3: # there is a match or attempts is 3
+	# while attempts < 3: # there is a match or attempts is 3
+		password = input('password: ')
+		attempts = attempts + 1
+
+		if password == ACTUAL_PASSWORD:
+			# success
+			matched = True
+		else:
+			print('wrong password...')
+
+	if matched:
+		print('Welcome!')
+	else:
+		print('Contact your sysadmin...locked out!')
+
+
 def main():
 
 	login()
