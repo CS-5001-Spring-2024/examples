@@ -4,7 +4,7 @@ Practice with for loops!
 VOWELS = ('a', 'e', 'i', 'o', 'u')
 
 def fun_with_for_loops():
-	list = ["hello", "there", "cs", "5001", "class"]
+	list = ['hello', 'there', 'cs', '5001', 'class']
 	# i = 0
 	# while i < len(list):
 	# 	item = list[i]		
@@ -12,12 +12,30 @@ def fun_with_for_loops():
 	# 	i += 1
 
 	# Iterating over a list is easier with a for loop!
+	# for item in list:
+	# 	print(item)
+
+	# my_string = 'computer'
+	# for character in my_string:
+	# 	print(character)
 
 	# Accessing the index using range()
+	# for i in range(len(list)):
+	# 	item = list[i]
+	# 	print(f'{i} {item}')
 
 	# Accessing the index using enumerate
+	# for value in enumerate(list):
+	# 	i = value[0]
+	# 	item = value[1]
+	# 	print(f'{i} {item}')
 
 	# Using zip to iterate over two lists at once
+	# first_names = ['Bob', 'Chris', 'Ariel', 'Jacob']
+	# last_names = ['Ramirez', 'Jung', 'Berket']
+	# for value in zip(first_names, last_names):
+	# 	print(value)
+
 
 def multiples_of_5(number: int):
 	"""
@@ -38,7 +56,17 @@ def generate_user_names(first_names: list[str],
 	of the last name stored at the ith position of the last_names
 	list.
 	"""
-	pass
+	# use the zip function
+	# make sure to handle last names longer than 7 chars
+
+	# create a temp string
+	# create an empty result list
+	# for each first, last pair in the zipped list
+	#       concatenate first letter of first with first seven letters of last
+	#       add result into the result list
+	# return result
+
+
 
 def nested_loops():
 	board = [
@@ -79,7 +107,15 @@ def count_vowels(sentence: str) -> int:
 	pass
 
 def main():
-	pass
+	# fun_with_for_loops()
+	first_names = ['Bob', 'Chris', 'Ariel']
+	last_names = ['Ramirez', 'Jung', 'Berketrollins']
+	# ['bramirez', 'cjung', 'aberketr']
+	result = generate_user_names(first_names, last_names)
+	print(result)
+
+
+
 
 if __name__ == '__main__':
 	main()
