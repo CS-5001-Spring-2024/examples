@@ -59,14 +59,18 @@ def generate_user_names(first_names: list[str],
 	# use the zip function
 	# make sure to handle last names longer than 7 chars
 
-	# create a temp string
+	# # create a temp string
+	# username = ''
 	# create an empty result list
+	result = []
 	# for each first, last pair in the zipped list
+	for first, last in zip(first_names, last_names):
 	#       concatenate first letter of first with first seven letters of last
 	#       add result into the result list
+		username = first[0].lower() + last[:7].lower()
+		result.append(username)		
 	# return result
-
-
+	return result
 
 def nested_loops():
 	board = [
@@ -74,14 +78,35 @@ def nested_loops():
 				['o', '-', '-'],
 				['-', '-', '-']
 			]
-
+	# for row in board:
+	# 	for letter in row:
+	# 		print(letter, end=' ')
+	# 	print()
+	
+	row = 0
+	while row < 3: # what would be a better way to get the 3
+		col = 0
+		while col < 3:
+			print(f'{board[row][col]}', end=' ')
+			col += 1
+		row += 1
+		print()
 
 def gradebook():
+	names = ['Jon', 'Promise', 'Soojin']
 	grades  = [
 				[95, 99, 82],
 				[90.5, 92, 84],
 				[85, 79, 82],
 				]
+	# index = 1
+	for name, scores in zip(names, grades):
+		sum = 0		
+		for score in scores:
+			sum += score
+		avg = sum/len(scores)	
+		print(f'{name}: {avg}')		
+		# index += 1
 
 	# student 1: XXX
 	# student 2: YYY
@@ -90,6 +115,10 @@ def gradebook():
 
 def is_vowel(char: str) -> bool:	
 	return char in VOWELS
+
+	# if char in VOWELS:
+	# 	return True
+	# return False
 
 	# if (char == 'a' 
 	# 	or char == 'e'
@@ -104,17 +133,26 @@ def count_vowels(sentence: str) -> int:
 	A function that takes as input a string and returns the number
 	of vowels (a, e, i, o, u) that are found in the sentence.
 	"""
-	pass
+	result = 0
+	for character in sentence:
+		# if character is a vowel
+		if is_vowel(character):
+			result += 1
+	return result
+
 
 def main():
 	# fun_with_for_loops()
-	first_names = ['Bob', 'Chris', 'Ariel']
-	last_names = ['Ramirez', 'Jung', 'Berketrollins']
-	# ['bramirez', 'cjung', 'aberketr']
-	result = generate_user_names(first_names, last_names)
-	print(result)
-
-
+	# first_names = ['Bob', 'Chris', 'Ariel']
+	# last_names = ['Ramirez', 'Jung', 'Berketrollins']
+	# # ['bramirez', 'cjung', 'aberketr']
+	# result = generate_user_names(first_names, last_names)
+	# print(result)
+	# print(count_vowels('hello'))
+	# print(count_vowels('prst'))
+	# print(count_vowels('cat'))
+	nested_loops()
+	# gradebook()
 
 
 if __name__ == '__main__':
