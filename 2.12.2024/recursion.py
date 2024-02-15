@@ -104,12 +104,43 @@ def print_nums_helper(current: int, n: int):
 def find_char_a(string: str) -> int:
 	"""
 	Implement a function that returns the number of times the 
-	character "a" appears in a str without using a loop. You 
-	may not take a slice of the string, and you may only access 
-	a single character of the string in any iteration of the 
-	function.
+	character "a" appears in a str without using a loop. 
+	You may not use the count function.
 	"""
-	pass
+	if len(string) == 0:
+		return 0
+	if string[0] == 'a':
+		return 1 + find_char_a(string[1:])
+	else:
+		return find_char_a(string[1:])
+
+
+def num_to_word(number: int) -> str:
+	# if number == 0:
+	# 	return 'zero'
+	# if number == 1:
+	# 	return 'one'
+	match number:
+		case 0:
+			return 'zero'
+		case 1:
+			return 'one'
+		case 2:
+			return 'two'
+		case 3:
+			return 'three'
+		case 4:
+			return 'four'
+		case 5:
+			return 'five'
+		case 6:
+			return 'six'
+		case 7:
+			return 'seven'
+		case 8:
+			return 'eight'
+		case 9:
+			return 'nine'			
 
 def in_english(number: int) -> str:
 	"""
@@ -118,21 +149,51 @@ def in_english(number: int) -> str:
 	the digits of the number in English. For example, 
 	in_english(153) would return "one five three".
 	"""
-	pass
+	if number >= 0 and number <= 9:
+		return num_to_word(number)		
+
+	return in_english(number // 10) + ' ' + num_to_word(number % 10)
+	# return num_to_word(number % 10) + ' ' + in_english(number // 10)
+ 
 
 def binarysearch(list: list[int], target: int) -> bool:
  	"""
  	Write a recursive function that returns True if the target
  	exists in the list and False otherwise.
  	"""
- 	pass
+ 	if len(list) == 0:
+ 		return False
+ 	if len(list) == 1:
+ 		return list[0] == target
+ 	# slice
+ 	# //
+ 	mid_index = len(list) // 2
+ 	if list[mid_index] == target:
+ 		return True
+ 	if list[mid_index] < target:
+ 		return binarysearch(list[mid_index+1:], target)
+ 	return binarysearch(list[:mid_index], target)
+
 
 def main():
 	# print(factorial_recursive(3))
 	# print(factorial_recursive(5))
 	# print_string_backward('computer')
-	print_nums_recursive(5)
+	# print_nums_recursive(5)
+	# print(find_char_a('dog'))
+	# print(in_english(4259))
+	# print(in_english(6))
+	# print(in_english(0))
+	print(binarysearch([1, 2, 4, 16, 73, 89, 450],0))
+	print(binarysearch([1, 2, 4, 16, 73, 89, 450],1))
+	print(binarysearch([1, 2, 4, 16, 73, 89, 450],2))
+	print(binarysearch([1, 2, 4, 16, 73, 89, 450],4))
+	print(binarysearch([1, 2, 4, 16, 73, 89, 450],16))
+	print(binarysearch([1, 2, 4, 16, 73, 89, 450],73))
+	print(binarysearch([1, 2, 4, 16, 73, 89, 450],89))
+	print(binarysearch([1, 2, 4, 16, 73, 89, 450],95))
 
+	# pass
 
 if __name__ == '__main__':
 	main()
