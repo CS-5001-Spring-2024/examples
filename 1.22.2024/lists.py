@@ -63,8 +63,8 @@ def greater_than_100(values: list[int]) -> int:
 
 def main():
 	# fun_with_lists()
-	values = [101, 2, 44, 533, 4, 222, 49, 243, 501]
-	# print(values[-3])
+	values = [101, 2, 44, 533, 4, 222, 49, 243, 501]	
+	print(values[-3])
 	result = greater_than_100(values)
 	print(result)
 	# months = ['may', 'june', 'august', 'september']

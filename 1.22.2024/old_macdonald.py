@@ -30,6 +30,18 @@ def ask_animal_and_sound() -> tuple[str, str]:
 	return animal, sound
 
 def main():
+
+	i = 0
+	while i < 5:
+		animal, sound = ask_animal_and_sound()
+		sing(animal, sound)
+		i += 1
+
+
+
+	# sing('pig', 'oink')
+	# sing('cow', 'moo')
+
 	# ('pig', 'oink')
 	# print(ask_animal_and_sound())
 
