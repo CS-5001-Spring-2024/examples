@@ -1,0 +1,4 @@
+The cat in the hat
+is a book about 
+a cat...
+that wears a hat.
