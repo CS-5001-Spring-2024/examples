@@ -1,3 +1,4 @@
+inventory = {}
 
 def add_new_item(new_item, number_available: int):
 	"""
@@ -5,7 +6,9 @@ def add_new_item(new_item, number_available: int):
 	Raises an exception if the item is already in the 
 	inventory.
 	"""
-	pass
+	if new_item in inventory:
+		raise Exception('We already sell that.')
+	inventory[new_item] = number_available
 
 def get_number_available(item_to_find) -> int:
 	"""
@@ -36,3 +39,20 @@ def main():
 
 if __name__ == '__main__':
 	main()
+
+
+
+# inventory = {}
+
+# inventory['rice'] = 10
+# inventory['pasta'] = 25
+# inventory['bread'] = 3
+# inventory['ramen'] = 2
+
+# for item in inventory.items():
+# 	print(item)
+
+# inventory.pop('bread')
+
+# for item in inventory.items():
+# 	print(item)
