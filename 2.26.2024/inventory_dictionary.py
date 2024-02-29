@@ -12,7 +12,7 @@ def add_new_item(new_item, number_available: int):
 
 def get_number_available(item_to_find) -> int:
 	"""
-	Return the number of the given item that are available
+	Return the number of the givenword_counts[word] item that are available
 	in the inventory.
 	Raises a KeyError if the item is not found in the inventory.
 	"""
