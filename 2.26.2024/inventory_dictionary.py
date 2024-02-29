@@ -16,7 +16,7 @@ def get_number_available(item_to_find) -> int:
 	in the inventory.
 	Raises a KeyError if the item is not found in the inventory.
 	"""
-	pass
+	return inventory[item_to_find]
 
 def update_number_available(item_to_find, number_purchased: int):	
 	"""
@@ -25,17 +25,31 @@ def update_number_available(item_to_find, number_purchased: int):
 	Raises an Exception if there is not a sufficient quantity 
 	of the item available. 
 	"""
-	pass
+	if inventory[item_to_find] < number_purchased:
+		raise Exception('Insufficient quantity.')
+	else:
+		inventory[item_to_find] -= number_purchased
 
 def show_inventory():
 	"""
 	Display the item names and amounts for all items in the
 	inventory.
 	"""
-	pass
+	for item in inventory:
+		print(f'\t{item} - {inventory[item]}')
 
 def main():
-	pass
+	try:
+		add_new_item('bread', 10)
+		add_new_item('rice', 15)
+		show_inventory()
+		print(get_number_available('rice'))		
+		update_number_available('bread', 5)
+		show_inventory()
+		update_number_available('bread', 6)
+		show_inventory()
+	except: 
+		print('exception...')
 
 if __name__ == '__main__':
 	main()
