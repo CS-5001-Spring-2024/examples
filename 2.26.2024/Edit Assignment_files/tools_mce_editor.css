@@ -1,0 +1,1155 @@
+/**************************/
+/*    LABELS VIEW         */
+/**************************/
+	#kl_wrapper_3 {  width: 100% !important; }
+
+	img { padding: 0;}
+	body:not(.is-inside-submission-frame):not(.embedded):not(.dashboard-is-planner) {font-family: "LatoWeb","Helvetica Neue",Helvetica,Arial,sans-serif; background-color: #fff; width: 96%; max-width: 1100px; min-width: 350px;}
+
+	/* Highlight different elements and label them */
+	.kl_mce_visual_labels p {
+		padding-top: 10px;
+		outline: 1px dashed #BBB;
+		margin-left: 3px;
+		background: transparent no-repeat url(data:image/gif;base64,R0lGODlhCQAJAJEAAAAAAP///7u7u////yH5BAEAAAMALAAAAAAJAAkAAAIQnG+CqCN/mlyvsRUpThG6AgA7);
+	}
+
+	.kl_mce_visual_labels h1 {
+		padding-top: 10px;
+		outline: 1px dashed #BBB;
+		margin-left: 3px;
+		background: transparent no-repeat url(data:image/gif;base64,R0lGODlhDQAKAIABALu7u////yH5BAEAAAEALAAAAAANAAoAAAIXjI8GybGu1JuxHoAfRNRW3TWXyF2YiRUAOw==);
+	}
+
+	.kl_mce_visual_labels h2 {
+		outline: 1px dashed #BBB;
+		margin-left: 3px;
+		background: transparent no-repeat url(data:image/gif;base64,R0lGODlhDgAKAIABALu7u////yH5BAEAAAEALAAAAAAOAAoAAAIajI8Hybbx4oOuqgTynJd6bGlWg3DkJzoaUAAAOw==);
+	}
+
+	.kl_mce_visual_labels h3 {
+		padding-top: 10px;
+		outline: 1px dashed #BBB;
+		margin-left: 3px;
+		background: transparent no-repeat url(data:image/gif;base64,R0lGODlhDgAKAIABALu7u////yH5BAEAAAEALAAAAAAOAAoAAAIZjI8Hybbx4oOuqgTynJf2Ln2NOHpQpmhAAQA7);
+	}
+
+	.kl_mce_visual_labels h4 {
+		padding-top: 10px;
+		outline: 1px dashed #BBB;
+		margin-left: 3px;
+		background: transparent no-repeat url(data:image/gif;base64,R0lGODlhDgAKAIABALu7u////yH5BAEAAAEALAAAAAAOAAoAAAIajI8HybbxInR0zqeAdhtJlXwV1oCll2HaWgAAOw==);
+	}
+
+	.kl_mce_visual_labels h5 {
+		padding-top: 10px;
+		outline: 1px dashed #BBB;
+		margin-left: 3px;
+		background: transparent no-repeat url(data:image/gif;base64,R0lGODlhDgAKAIABALu7u////yH5BAEAAAEALAAAAAAOAAoAAAIajI8HybbxIoiuwjane4iq5GlW05GgIkIZUAAAOw==);
+	}
+
+	.kl_mce_visual_labels h6 {
+		padding-top: 10px;
+		outline: 1px dashed #BBB;
+		margin-left: 3px;
+		background: transparent no-repeat url(data:image/gif;base64,R0lGODlhDgAKAIABALu7u////yH5BAEAAAEALAAAAAAOAAoAAAIajI8HybbxIoiuwjan04jep1iZ1XRlAo5bVgAAOw==);
+	}
+
+	.kl_mce_visual_labels div {
+		padding-top: 10px;
+		outline: 1px dashed #BBB;
+		margin-left: 3px;
+		background: transparent no-repeat url(data:image/gif;base64,R0lGODlhEgAKAIABALu7u////yH5BAEAAAEALAAAAAASAAoAAAIfjI9poI0cgDywrhuxfbrzDEbQM2Ei5aRjmoySW4pAAQA7);
+	}
+
+	.kl_mce_visual_labels section {
+		padding-top: 10px;
+		outline: 1px dashed #BBB;
+		margin: 0 0 1em 3px;
+		background: transparent no-repeat url(data:image/gif;base64,R0lGODlhKAAKAIABALu7u////yH5BAEAAAEALAAAAAAoAAoAAAI5jI+pywcNY3sBWHdNrplytD2ellDeSVbp+GmWqaDqDMepc8t17Y4vBsK5hDyJMcI6KkuYU+jpjLoKADs=);
+	}
+
+	.kl_mce_visual_labels article {
+		padding-top: 10px;
+		outline: 1px dashed #BBB;
+		margin: 0 0 1em 3px;
+		background: transparent no-repeat url(data:image/gif;base64,R0lGODlhKgAKAIABALu7u////yH5BAEAAAEALAAAAAAqAAoAAAI6jI+pywkNY3wG0GBvrsd2tXGYSGnfiF7ikpXemTpOiJScasYoDJJrjsG9gkCJ0ag6KhmaIe3pjDYBBQA7);
+	}
+
+	.kl_mce_visual_labels blockquote {
+		padding-top: 10px;
+		outline: 1px dashed #BBB;
+		background: transparent no-repeat url(data:image/gif;base64,R0lGODlhPgAKAIABALu7u////yH5BAEAAAEALAAAAAA+AAoAAAJPjI+py+0Knpz0xQDyuUhvfoGgIX5iSKZYgq5uNL5q69asZ8s5rrf0yZmpNkJZzFesBTu8TOlDVAabUyatguVhWduud3EyiUk45xhTTgMBBQA7);
+	}
+
+	.kl_mce_visual_labels address {
+		padding-top: 10px;
+		outline: 1px dashed #BBB;
+		margin: 0 0 1em 3px;
+		background: transparent no-repeat url(data:image/gif;base64,R0lGODlhLQAKAIABALu7u////yH5BAEAAAEALAAAAAAtAAoAAAI/jI+pywwNozSP1gDyyZcjb3UaRpXkWaXmZW4OqKLhBmLs+K263DkJK7OJeifh7FicKD9A1/IpGdKkyFpNmCkAADs=);
+	}
+
+	.kl_mce_visual_labels pre {
+		padding-top: 10px;
+		outline: 1px dashed #BBB;
+		margin-left: 3px;
+		background: transparent no-repeat url(data:image/gif;base64,R0lGODlhFQAKAIABALu7uwAAACH5BAEAAAEALAAAAAAVAAoAAAIjjI+ZoN0cgDwSmnpz1NCueYERhnibZVKLNnokq8IvKpJtVQAAOw==);
+	}
+
+	.kl_mce_visual_labels figure {
+		padding-top: 10px;
+		outline: 1px dashed #BBB;
+		margin: 0 0 1em 3px;
+		background: transparent no-repeat url(data:image/gif;base64,R0lGODlhJAAKAIAAALu7u////yH5BAEAAAEALAAAAAAkAAoAAAI0jI+py+2fwAHUSFvD3RlvG4HIp4nX5JFSpnZUJ6LlrM52OE7uSWosBHScgkSZj7dDKnWAAgA7);
+	}
+
+	.kl_mce_visual_labels hgroup {
+		padding-top: 10px;
+		outline: 1px dashed #BBB;
+		margin: 0 0 1em 3px;
+		background: transparent no-repeat url(data:image/gif;base64,R0lGODlhJwAKAIABALu7uwAAACH5BAEAAAEALAAAAAAnAAoAAAI3jI+pywYNI3uB0gpsRtt5fFnfNZaVSYJil4Wo03Hv6Z62uOCgiXH1kZIIJ8NiIxRrAZNMZAtQAAA7);
+	}
+
+	.kl_mce_visual_labels aside {
+		padding-top: 10px;
+		outline: 1px dashed #BBB;
+		margin: 0 0 1em 3px;
+		background: transparent no-repeat url(data:image/gif;base64,R0lGODlhHgAKAIABAKqqqv///yH5BAEAAAEALAAAAAAeAAoAAAItjI+pG8APjZOTzgtqy7I3f1yehmQcFY4WKZbqByutmW4aHUd6vfcVbgudgpYCADs=);
+	}
+
+	.kl_mce_visual_labels figcaption {
+		outline: 1px dashed #BBB;
+	}
+
+	.kl_mce_visual_labels ul {
+		padding-top: 10px;
+		outline: 1px dashed #BBB;
+		margin: 0 0 1em 3px;
+		background: transparent no-repeat url(data:image/gif;base64,R0lGODlhDQAKAIAAALu7u////yH5BAEAAAEALAAAAAANAAoAAAIXjI8GybGuYnqUVSjvw26DzzXiqIDlVwAAOw==)
+	}
+
+	.kl_mce_visual_labels ol {
+		padding-top: 10px;
+		outline: 1px dashed #BBB;
+		margin: 0 0 1em 3px;
+		background: transparent no-repeat url(data:image/gif;base64,R0lGODlhDQAKAIABALu7u////yH5BAEAAAEALAAAAAANAAoAAAIXjI8GybH6HHt0qourxC6CvzXieHyeWQAAOw==);
+	}
+	
+
+/**************************/
+/*    BLOCKS VIEW       */
+/**************************/
+	/* Add a comment before and after the wrapper */
+	 .kl_mce_visual_blocks #kl_wrapper_3:before {
+		content: '---- Begin Design Tools Wrapper ----';
+	  	background-color: #E4E4E4;
+	  	width: 100%;
+	  	display: block;
+	  	text-align: center;
+	  	font-family: 'Courier', serif;
+	  	font-style: italic;
+	  	clear: both;
+	}
+	 .kl_mce_visual_blocks #kl_wrapper_3:after {
+		content: '---- End Design Tools Wrapper ----';
+	  	background-color: #E4E4E4;
+	  	width: 100%;
+	  	display: block;
+	  	text-align: center;
+	  	font-family: 'Courier', serif;
+	  	font-style: italic;
+	  	clear: both;
+	}
+
+	/* Outline the different elements */
+.kl_mce_visual_blocks h1, .kl_mce_visual_blocks h2, .kl_mce_visual_blocks h3, .kl_mce_visual_blocks h4, .kl_mce_visual_blocks h5, .kl_mce_visual_blocks h6, .kl_mce_visual_blocks p, .kl_mce_visual_blocks ol, .kl_mce_visual_blocks li, .kl_mce_visual_blocks dt, .kl_mce_visual_blocks dd, .kl_mce_visual_blocks span {
+	outline: 1px dotted #D6D6D6; 
+}
+.kl_mce_visual_blocks #kl_wrapper_3 div {
+	outline: 1px solid #0fa6eb;
+}
+.kl_mce_visual_blocks #kl_wrapper_3 > div {
+	outline: 4px double #71afec; 
+}
+.kl_mce_visual_blocks #kl_wrapper_3 > div > div {
+	outline: 3px double #6A59C7;
+}
+.kl_mce_visual_blocks dl {
+	outline: 1px dashed #809FFF; 
+}
+	/* ebook nav */
+.kl_mce_visual_blocks #kl_wrapper_3 div.kl_book_nav:before {content: 'Book nav module link:'; background: #676767; color: #fff; padding: 5px; }
+.kl_mce_visual_blocks #kl_wrapper_3 div.kl_book_nav {display: block; position: relative; width: 100%; margin-bottom: 0;}
+/* Custom CSS */
+#kl_custom_css {
+	border: 0 solid;
+    background: #23840a;
+    color: #fff;
+    border-bottom-left-radius: 6px;
+    padding: 0;
+    margin: 0!important;
+    width: 100px;
+    font-size: 12px!important;
+    position: fixed!important;
+    top: 0;
+    right: 0;
+    text-align: center;
+    height: 19px;
+    z-index: 1000;
+}
+#kl_custom_css:after {
+	content: "Custom CSS On";
+}
+/* Module List Dates */
+.kl_mce_visual_blocks #kl_modules > ul {
+	column-count: 1 !important;
+	-moz-column-count: 1 !important;
+	-webkit-column-count: 1 !important;
+}
+.kl_mce_visual_blocks .kl_module_timeframe {
+	display: inline-block;
+    float: left;
+    font-size: 12px;
+}
+.kl_mce_visual_blocks .kl_modules_active_stop {
+	margin-left: 10px;
+}
+.kl_mce_visual_blocks .kl_modules_active_start,
+.kl_mce_visual_blocks .kl_modules_active_stop {
+	padding: 0 3px;
+    border: 1px solid #299a0b;
+    display: inline-block;
+    border-radius: 5px;
+}
+.kl_mce_visual_blocks .kl_modules_active_stop:before {
+    margin: 0 6px 0 -11px;
+    content: '-';
+}
+/*.kl_mce_visual_blocks #kl_introduction {
+	border: 1px dashed #aa00ff;
+}
+.kl_mce_visual_blocks #kl_introduction:before {
+	content: "Introduction";
+	background: #aa00ff;
+	margin-bottom: 0;
+}
+.kl_mce_visual_blocks #kl_lectures {
+	border: 1px dashed green; 
+}
+.kl_mce_visual_blocks #kl_lectures:before {
+	content: "Lectures";
+	background: green;
+}
+.kl_mce_visual_blocks #kl_objectives {
+	border: 1px dashed blue; 
+}
+.kl_mce_visual_blocks #kl_objectives:before{
+	content: "Objectives";
+	background: blue;
+}
+.kl_mce_visual_blocks #kl_readings {
+	border: 1px dashed #C00000; 
+}
+.kl_mce_visual_blocks #kl_readings:before {
+	content: "Readings";
+	background: #C00000;
+}
+.kl_mce_visual_blocks h3{
+	margin-top: 0;
+}*/
+
+/* Custom Accordion Styling */
+	.kl_mce_visual_blocks #kl_wrapper_3 div.kl_panels_accordion {
+		outline: 3px double #05a6eb; 
+	}
+	.kl_mce_visual_blocks .kl_panels_accordion:before {
+		content: "Accordion";
+		background: #05a6eb;
+		margin-bottom: 5px;
+		color: #fff;
+	    padding: 4px 5px;
+	    font-size: 12px;
+	}
+	body .kl_panels_accordion > div {
+		padding: 10px;
+		outline: 1px solid #cccccc;
+		margin-bottom: 10px;
+	}
+	body .kl_panels_accordion > .kl_panel_heading {
+		outline: 1px solid #dbdbdb !important;
+		color: #333;
+		font-weight: normal !important;
+		background-image: none !important;
+		background: #efefef;
+		text-shadow: none !important;
+		outline-bottom-color: #bbb !important;
+		box-shadow: none !important;
+		padding: 5px !important;
+		margin: 5px 0 0 !important;
+		text-align: left !important;
+		font-size: 18px !important;
+    	line-height: 24px;
+	}
+	.kl_mce_visual_blocks .kl_panels_accordion > .kl_panel_heading {
+		outline: 2px dotted #05a6eb !important;
+	}
+
+/* Custom Tabs Styling */
+	.kl_mce_visual_blocks #kl_wrapper_3 div.kl_panels_wrapper.kl_panels_tabs, 
+	.kl_mce_visual_blocks #kl_wrapper_3 div.kl_panels_wrapper.kl_custom_tabs, 
+	.kl_mce_visual_blocks #kl_wrapper_3 div.kl_panels_wrapper.kl_tabbed_section {
+		outline: 3px double #008B8B !important;
+	}
+	.kl_mce_visual_blocks .kl_panels_tabs:before, 
+	.kl_mce_visual_blocks .kl_custom_tabs:before, 
+	.kl_mce_visual_blocks .kl_tabbed_section:before {
+		content: "Tabs";
+		background: #008B8B;
+		margin-bottom: 5px;
+		color: #fff;
+		padding: 4px 5px;
+	    font-size: 12px;
+		display: block;
+		width: 40px;
+	}
+	.kl_mce_visual_blocks .kl_panels_tabs > .kl_panel_heading {
+		outline: 2px dotted #008b8b !important;
+	}
+	.kl_mce_visual_blocks #kl_wrapper_3 .kl_panels_tabs > div.kl_panel_content {
+		outline: 2px solid #008b8b !important;
+	}
+	.kl_mce_visual_blocks .tab-content {
+		outline: 1px #333333 solid;
+	}
+	.kl_mce_visual_blocks .ui-tabs-minimal > .tab-content {
+		outline: 1px #333333 dashed;
+		outline-top: 1px #333333 solid;
+	}
+	.kl_mce_visual_blocks .tab-list {
+		overflow: hidden;
+		margin: 0;
+	}
+	body .kl_panels_tabs > .kl_panel_heading{
+		outline: 1px solid #dbdbdb;
+		color: #333;
+		font-weight: normal !important;
+		background-image: none !important;
+		background: #efefef;
+		text-shadow: none !important;
+		outline-bottom-color: #bbb !important;
+		box-shadow: none !important; 
+		outline-top-right-radius: 4px !important;
+		outline-top-left-radius: 4px !important;
+		margin: 5px 0 0 !important;
+		padding: 5px 10px !important;
+		outline-bottom: none !important;
+		display: inline-block !important;
+		font-size: 18px !important;
+    	line-height: 24px;
+	}
+	body .kl_panels_tabs > .kl_panel_content,
+	body .kl_tabbed_section > .kl_tab_content {
+		outline: 1px solid #dbdbdb;
+		padding: 10px;
+	}
+	.kl_mce_visual_blocks .kl_panels_tabs > h6,
+	.kl_mce_visual_blocks .kl_panels_tabs > h5,
+	.kl_mce_visual_blocks .kl_panels_tabs > h4,
+	.kl_mce_visual_blocks .kl_tabbed_section > h4,
+	.kl_mce_visual_blocks .kl_panels_tabs > h3,
+	.kl_mce_visual_blocks .kl_tabbed_section > h3 {
+		float: none;
+		display: inline-block;
+	}
+/* Custom Accordion Styling */
+	.kl_mce_visual_blocks #kl_wrapper_3 > div > div.kl_panels_expander {
+		outline: 3px double #b45f06; 
+	}
+	.kl_mce_visual_blocks .kl_panels_expander:before {
+		content: "Expander";
+		background: #b45f06;
+		margin-bottom: 5px;
+		color: #fff;
+	    padding: 4px 5px;
+	    font-size: 12px;
+	}
+	.kl_mce_visual_blocks .kl_panels_expander > .kl_panel_heading {
+		outline: 2px dotted #b45f06 !important;
+	}
+	.kl_mce_visual_blocks .kl_panels_expander > .kl_panel_content {
+		outline: 2px solid #b45f06 !important;
+	}
+	body .kl_panels_expander > div {
+		padding: 10px;
+		outline: 1px solid #cccccc;
+		outline-top: none;
+		margin-bottom: 10px;
+	}
+	body div.kl_panels_expander > .kl_panel_heading {
+    	outline-bottom-left-radius: 0 !important;
+    	outline-bottom-right-radius: 0 !important;
+	}
+/* Table Sorter */
+	table.tablesorter thead tr th {
+		background-image: url(https://designtools.ciditools.com/css/images/tablesorter.gif);
+		background-repeat: no-repeat;
+		background-position: center right;
+		cursor: pointer;
+	}
+/* Custom Popup styling */
+	body.kl_mce_view_desktop .kl_modal {
+		display: none;
+	}
+	body.kl_mce_visual_blocks .kl_modal, body.kl_mce_visual_labels .kl_modal {
+		outline: 1px solid #A9A9A9; 
+		display: block;
+		background: #f7f7f7;
+		outline-radius: 5px;
+		padding: 0 10px 10px;
+		overflow: hidden;
+	}
+	.kl_mce_visual_blocks .kl_modal:before {
+		content: "Modal Dialogue (Hidden)";
+		background: #555555;
+		margin-bottom: 5px;
+		color: #fff;
+		padding: 4px 5px;
+	    font-size: 12px;
+		display: block;
+		width: 130px;
+	}
+	.kl_mce_visual_blocks .kl_modal_trigger:after, .kl_mce_visual_blocks .kl_tooltip_trigger:after, .kl_mce_visual_blocks .kl_popover_trigger:after{
+		background: #555555;
+		padding: 0 5px;
+		margin-left: 3px;
+		color: #fff;
+		font-size: 9px;
+		outline-radius: 5px;
+	}
+	.kl_mce_visual_blocks div.kl_popover_content,
+	.kl_mce_visual_blocks div.kl_modal_content {
+	    outline: 1px solid #31516b !important;
+	}
+	.kl_mce_visual_blocks .kl_popover_content:before,
+	.kl_mce_visual_blocks .kl_modal_content:before {
+		content: "Modal Content (Hidden in Browser)";
+		background: #31516b;
+		color: #fff;
+		padding: 2px 5px;
+		font-size: 10px;
+		margin-bottom: 5px;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.kl_mce_visual_blocks .kl_popover_content:before {
+		content: "Popover Content (Hidden in Browser)";
+	}
+	.kl_mce_visual_blocks .kl_modal_content {
+	    padding-top: 40px !important;
+	}
+	.kl_mce_visual_blocks .kl_modal_content .kl_modal_title {
+	    outline: 2px dotted;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    padding: 5px;
+	}
+	.kl_mce_visual_blocks .kl_modal_trigger:after{
+		content: "Modal";
+	}
+	.kl_mce_visual_blocks .kl_tooltip_trigger:after{
+		content: "Tip";
+	}
+	.kl_mce_visual_blocks .kl_popover_trigger:after{
+		content: "Popover";
+	}
+	.kl_mce_visual_blocks .kl_popover_trigger.kl_popup_interactive:after{
+		content: "Interactive Popover";
+	}
+	.kl_mce_visual_blocks .kl_modal h4.kl_modal_title {
+	    margin: 0 0 10px !important;
+	}
+	/* Read More Read/Less div */
+	.kl_mce_visual_blocks .expander {
+		position: relative;
+		padding-top: 10px;
+		border: #CFBDFF solid 1px;
+		border-radius: 5px;
+	}
+	.kl_mce_visual_blocks .expander:before{
+		content: "Read More";
+		display: block;
+		position: absolute;
+		padding: 0;
+		margin: -11px -1px 0 0;
+		color: #000;
+		width: 70px;
+		border-bottom-left-radius: 10px;
+		text-align: center;
+		font-size: 10px;
+		line-height: 15px;
+		background: #CFBDFF;
+		right: 0;
+	}
+	/* Progress Bar fix */
+	.kl_mce_visual_blocks div#kl_progress_bar, .kl_mce_visual_blocks div.kl_progress_bar_wrapper, .kl_mce_visual_blocks div.kl_progress_bar_value, .kl_mce_visual_blocks div.kl_progress_bar_label { margin: 0 !important;} 
+/* Add icons to special instances */
+.kl_mce_visual_blocks #kl_wrapper_3 .kl_quick_check .kl_quick_check_correct_answer:before, #kl_student_verification:before, #kl_verification_success, #kl_custom_css {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	text-rendering: optimizeLegibility;
+	text-transform: none !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+	margin-right: 5px;
+}
+
+/* Quick Check Styling */
+.kl_mce_visual_blocks #kl_wrapper_3 .kl_quick_check .kl_quick_check_correct, .kl_mce_visual_blocks #kl_wrapper_3 .kl_quick_check .kl_quick_check_incorrect, .kl_mce_visual_blocks #kl_wrapper_3 .kl_quick_check, .kl_mce_visual_blocks #kl_wrapper_3 .kl_quick_check .kl_quick_check_response{
+	background: #fff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	padding: 15px;
+	display: block;
+}
+.kl_quick_check .kl_quick_check_correct, .kl_quick_check_correct_answer .kl_quick_check_response {
+	border: 2px solid #38761d !important;
+	color: #38761d !important;
+}
+.kl_mce_visual_blocks #kl_wrapper_3 .kl_quick_check .kl_quick_check_response {
+	border: 2px solid #b94a48;
+	color: #b94a48;
+}
+.kl_quick_check_response,   .quickCheck .response {display: block;}
+.kl_mce_visual_blocks #kl_wrapper_3 .kl_quick_check .kl_quick_check_incorrect {
+}
+.kl_mce_visual_blocks #kl_wrapper_3 .kl_quick_check {
+	background: #F2F5F7;
+	overflow: hidden;
+	margin-bottom: 0px;
+	padding: 20px;
+}
+.kl_mce_visual_blocks #kl_wrapper_3 .kl_quick_check h4 {
+	margin-top: 0px;
+}
+.kl_mce_visual_blocks #kl_wrapper_3 .kl_quick_check .next {
+	width: 250px;
+	float: right;
+	margin-top: 15px;
+}
+.kl_mce_visual_blocks #kl_wrapper_3 .kl_quick_check .kl_quick_check_correct_answer:before {
+	font-size: 12px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    content: "Correct Answer";
+    background-color: #38761d;
+    color: #fff;
+    padding: 0 4px;
+}
+
+
+/* Student Verification Styles */
+.kl_mce_visual_blocks #kl_wrapper_3 .studentName {
+	font-style: italic;
+	background: #FEDFDF;
+	border: 1px dotted;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	padding: 0 3px;
+}
+#kl_student_verification:before, #kl_verification_success:before, #kl_verification_instructions:before, {
+	margin: -1px 0 10px -1px !important;
+}
+#kl_student_verification {
+	border: dashed 1px #C20000;
+}
+#kl_student_verification:before{
+	content: "Agreement Text";
+	background: #C20000;
+	margin-bottom: 10px;
+	width: 100px;
+}
+#kl_verification_instructions {
+	border: dashed 1px #0049ff;
+}
+#kl_verification_instructions:before{
+	content: "Mobile App Text";
+	background: #0049ff;
+	margin-bottom: 10px;
+	width: 100px;
+}
+#kl_verification_success {
+	border: dashed 1px #02B11E;
+	display: block;
+}
+#kl_verification_success:before{
+	content: "Success Message";
+	background: #02B11E;
+	margin-bottom: 10px;
+	width: 100px;
+}
+
+/* Syllabus Styling */
+	.kl_mce_visual_blocks .kl_syllabus_content #kl_activities:before, .kl_mce_visual_blocks .kl_syllabus_content #kl_information:before, .kl_mce_visual_blocks .kl_syllabus_content #kl_outcomes:before, .kl_mce_visual_blocks .kl_syllabus_content .kl_resources:before, .kl_mce_visual_blocks .kl_syllabus_content .policies:before, .kl_mce_visual_blocks .kl_syllabus_content .grades_:before {
+		display: block;
+		position: absolute;
+		padding: 0;
+		margin: -1px 0 0 0;
+		color: #fff;
+		width: 75px;
+		border-bottom-left-radius: 10px;
+		text-align: center;
+		font-size: 10px;
+		line-height: 15px;
+		text-shadow: 0px 1px 0px #000000;
+		right: 6px;
+		background: #05a6eb;
+	}
+	.kl_mce_visual_blocks .kl_syllabus_content #kl_activities, .kl_mce_visual_blocks .kl_syllabus_content #kl_information, .kl_mce_visual_blocks .kl_syllabus_content #kl_outcomes, .kl_mce_visual_blocks .kl_syllabus_content .kl_resources, .kl_mce_visual_blocks .kl_syllabus_content .policies, .kl_mce_visual_blocks .kl_syllabus_content .grades_ {
+		border: 1px dashed #00B3FF; 
+	}
+	.kl_mce_visual_blocks .kl_syllabus_content #kl_activities:before {
+		content: "Activities";
+	}
+	.kl_mce_visual_blocks .kl_syllabus_content #kl_information:before {
+		content: "Information";
+	}
+	.kl_mce_visual_blocks .kl_syllabus_content #kl_outcomes:before {
+		content: "Outcomes";
+	}
+	.kl_mce_visual_blocks .kl_syllabus_content .kl_resources:before {
+		content: "Resources";
+	}
+	.kl_mce_visual_blocks .kl_syllabus_content .policies:before {
+		content: "Policies";
+	}
+	.kl_mce_visual_blocks .kl_syllabus_content .grades_:before {
+		content: "Grades";
+	}
+	.kl_mce_visual_blocks .kl_to_remove {
+		background: rgba(255, 0, 0, 0.11);
+		border: 2px dashed #db4f4a;
+		position: relative;
+	}
+	.kl_to_remove:after{
+		content: 'Click "Remove Block(s)" Button to Remove';
+		display: block;
+		position: absolute;
+		padding: 0;
+		margin: -28px 9px 0 0;
+		color: #fff;
+		width: 130px;
+		text-align: center;
+		font-size: 10px;
+		line-height: 15px;
+		background: #db4f4a;
+		right: 0;
+		top: 28px;
+		text-shadow: 0 1px 1px #000000;
+		box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	}
+	.kl_block_hover {
+		background: #00dbfd !important;
+	}
+	.kl_icon_highlight,
+	.kl_accessibility_highlight {
+		border: 1px solid #00dbfd !important;
+		box-shadow: 0 0 10px #00dbfd !important;
+	}
+
+	/* Indicator for default tab (if set) */
+	.kl_mce_visual_blocks .kl_panels_wrapper .kl_current {
+		padding-left: 15px;
+	}
+	.kl_mce_visual_blocks .kl_panels_wrapper .kl_current:before {
+	    content: "Open";
+	    background: #38761d;
+	    display: inline-block;
+	    color: #fff;
+	    position: absolute;
+	    padding: 0px 6px;
+	    font-size: 10px;
+	    border-radius: 3px;
+	    top: 0;
+	    right: 0;
+	    font-weight: bold;
+	    line-height: 17px;
+	}
+	.kl_mce_visual_blocks .kl_custom_accordion .kl_current_acc:before {
+		border-top-left-radius: 0;
+		margin: 0 0 0 -16px;
+	}
+
+	/* Columns */
+	.kl_mce_visual_blocks #kl_wrapper_3 div.kl_flex_column:before {content: "Column";background: #31516b;color: #fff;padding: 2px 5px;font-size: 10px;margin-bottom: 5px;position: absolute;top: 0;}
+	.kl_mce_visual_blocks #kl_wrapper_3 div.kl_flex_column {outline: 4px double #31516b;}
+	.kl_mce_visual_blocks #kl_wrapper_3 div.kl_flex_columns_wrapper{outline: 4px double #31516b;}
+
+/* Allow Buttons to be selected in the editor */
+	body.kl_has_style .btn,
+	body.kl_has_style .Button, 
+	body.kl_has_style .ui-button {
+		-webkit-user-select: auto !important;
+    	-moz-user-select: auto !important;
+    	-ms-user-select: auto !important;
+    	user-select: auto !important;
+	}
+
+/* responsive iframe indicator */
+	.kl_mce_visual_blocks #kl_wrapper_3 div.kl_iframe_fill_width, 
+	.kl_mce_visual_blocks #kl_wrapper_3 div.kl_iframe_responsive_scale {
+		outline: 0px solid #0049ff!important;
+	}
+	.kl_mce_visual_blocks #kl_wrapper_3 div.kl_iframe_fill_width:before, 
+	.kl_mce_visual_blocks #kl_wrapper_3 div.kl_iframe_responsive_scale:before {
+		content: "Fill width";
+	    background: #0049ff;
+	    margin-bottom: 5px;
+	    color: #fff;
+	    padding: 4px 5px;
+	    font-size: 12px;
+	    max-width: 100%;
+	    overflow: hidden;
+	    height: 18px;
+	    position: absolute;
+	    z-index: 100;
+	}
+	.kl_mce_visual_blocks #kl_wrapper_3 div.kl_iframe_responsive_scale:before {
+		content: "Scale proportionally";
+	}
+	.kl_mce_visual_blocks #kl_wrapper_3 div.kl_iframe_responsive_scale.kl_iframe_fill_width:before {
+		content: "Scale proportionally and fill width";
+	}
+
+/* Allow Language Accents */
+#kl_show_accents {
+	border: 0 solid;
+    background: #299a0b;
+    text-shadow: 1px 1px 0 #000;
+    color: #fff;
+    border-bottom-right-radius: 6px;
+    padding: 0 5px;
+    margin: 0!important;
+    width: 240px;
+    font-size: 12px!important;
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    text-align: left;
+    height: 20px;
+    z-index: 1000;
+    line-height: 17px;
+}
+#kl_show_accents:after {
+	content: "Show students language accent controls";
+}
+.kl_mce_visual_blocks .kl_user_details_name, .kl_mce_visual_blocks .kl_user_role, .kl_mce_visual_blocks .kl_user_details_email{
+	border: 1px dashed #555555;
+    padding: 1px 3px;
+    border-radius: 3px;
+}
+.kl_mce_visual_blocks .kl_user_details_name:after, .kl_mce_visual_blocks .kl_user_role:after, .kl_mce_visual_blocks .kl_user_details_email:after{
+	background: #555555;
+	padding: 0 5px;
+	margin-left: 3px;
+	color: #fff;
+	font-size: 9px;
+	outline-radius: 5px;
+}
+.kl_mce_visual_blocks .kl_user_details_name:after{
+	content: "Name";
+}
+.kl_mce_visual_blocks .kl_user_role:after{
+	content: "Role";
+}
+.kl_mce_visual_blocks .kl_user_details_email:after{
+	content: "Email";
+}
+/* Lang Attributes */
+.kl_mce_visual_blocks *[lang] {
+    outline: 1px dashed #efdeb2;
+}
+.kl_mce_visual_blocks *[lang]:before {
+    content: "";
+    display: inline-block;
+    padding: .25em .4em;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    text-shadow: none;
+    font-style: normal;
+    margin-right: .6em;
+    font-size: 10px;
+    background:#ad7d00;
+    padding-right: .6em;
+    padding-left: .6em;
+    border-radius: 10rem;
+}
+.kl_mce_visual_blocks *[lang=ab]:before {content: "Abkhazian";}
+.kl_mce_visual_blocks *[lang=aa]:before {content: "Afar";}
+.kl_mce_visual_blocks *[lang=af]:before {content: "Afrikaans";}
+.kl_mce_visual_blocks *[lang=ak]:before {content: "Akan";}
+.kl_mce_visual_blocks *[lang=sq]:before {content: "Albanian";}
+.kl_mce_visual_blocks *[lang=am]:before {content: "Amharic";}
+.kl_mce_visual_blocks *[lang=ar]:before {content: "Arabic";}
+.kl_mce_visual_blocks *[lang=an]:before {content: "Aragonese";}
+.kl_mce_visual_blocks *[lang=hy]:before {content: "Armenian";}
+.kl_mce_visual_blocks *[lang=as]:before {content: "Assamese";}
+.kl_mce_visual_blocks *[lang=av]:before {content: "Avaric";}
+.kl_mce_visual_blocks *[lang=ae]:before {content: "Avestan";}
+.kl_mce_visual_blocks *[lang=ay]:before {content: "Aymara";}
+.kl_mce_visual_blocks *[lang=az]:before {content: "Azerbaijani";}
+.kl_mce_visual_blocks *[lang=bm]:before {content: "Bambara";}
+.kl_mce_visual_blocks *[lang=ba]:before {content: "Bashkir";}
+.kl_mce_visual_blocks *[lang=eu]:before {content: "Basque";}
+.kl_mce_visual_blocks *[lang=be]:before {content: "Belarusian";}
+.kl_mce_visual_blocks *[lang=bn]:before {content: "Bengali (Bangla)";}
+.kl_mce_visual_blocks *[lang=bh]:before {content: "Bihari";}
+.kl_mce_visual_blocks *[lang=bi]:before {content: "Bislama";}
+.kl_mce_visual_blocks *[lang=bs]:before {content: "Bosnian";}
+.kl_mce_visual_blocks *[lang=br]:before {content: "Breton";}
+.kl_mce_visual_blocks *[lang=bg]:before {content: "Bulgarian";}
+.kl_mce_visual_blocks *[lang=my]:before {content: "Burmese";}
+.kl_mce_visual_blocks *[lang=ca]:before {content: "Catalan";}
+.kl_mce_visual_blocks *[lang=ch]:before {content: "Chamorro";}
+.kl_mce_visual_blocks *[lang=ce]:before {content: "Chechen";}
+.kl_mce_visual_blocks *[lang=ny]:before {content: "Chichewa, Chewa, Nyanja";}
+.kl_mce_visual_blocks *[lang=zh]:before {content: "Chinese";}
+.kl_mce_visual_blocks *[lang=zh-Hans]:before {content: "Chinese (Simplified)";}
+.kl_mce_visual_blocks *[lang=zh-Hant]:before {content: "Chinese (Traditional)";}
+.kl_mce_visual_blocks *[lang=cv]:before {content: "Chuvash";}
+.kl_mce_visual_blocks *[lang=kw]:before {content: "Cornish";}
+.kl_mce_visual_blocks *[lang=co]:before {content: "Corsican";}
+.kl_mce_visual_blocks *[lang=cr]:before {content: "Cree";}
+.kl_mce_visual_blocks *[lang=hr]:before {content: "Croatian";}
+.kl_mce_visual_blocks *[lang=cs]:before {content: "Czech";}
+.kl_mce_visual_blocks *[lang=da]:before {content: "Danish";}
+.kl_mce_visual_blocks *[lang=dv]:before {content: "Divehi, Dhivehi, Maldivian";}
+.kl_mce_visual_blocks *[lang=nl]:before {content: "Dutch";}
+.kl_mce_visual_blocks *[lang=dz]:before {content: "Dzongkha";}
+.kl_mce_visual_blocks *[lang=en]:before {content: "English";}
+.kl_mce_visual_blocks *[lang=eo]:before {content: "Esperanto";}
+.kl_mce_visual_blocks *[lang=et]:before {content: "Estonian";}
+.kl_mce_visual_blocks *[lang=ee]:before {content: "Ewe";}
+.kl_mce_visual_blocks *[lang=fo]:before {content: "Faroese";}
+.kl_mce_visual_blocks *[lang=fj]:before {content: "Fijian";}
+.kl_mce_visual_blocks *[lang=fi]:before {content: "Finnish";}
+.kl_mce_visual_blocks *[lang=fr]:before {content: "French";}
+.kl_mce_visual_blocks *[lang=ff]:before {content: "Fula, Fulah, Pulaar, Pular";}
+.kl_mce_visual_blocks *[lang=gl]:before {content: "Galician";}
+.kl_mce_visual_blocks *[lang=gd]:before {content: "Gaelic (Scottish)";}
+.kl_mce_visual_blocks *[lang=gv]:before {content: "Gaelic (Manx)";}
+.kl_mce_visual_blocks *[lang=ka]:before {content: "Georgian";}
+.kl_mce_visual_blocks *[lang=de]:before {content: "German";}
+.kl_mce_visual_blocks *[lang=el]:before {content: "Greek";}
+.kl_mce_visual_blocks *[lang=kl]:before {content: "Greenlandic";}
+.kl_mce_visual_blocks *[lang=gn]:before {content: "Guarani";}
+.kl_mce_visual_blocks *[lang=gu]:before {content: "Gujarati";}
+.kl_mce_visual_blocks *[lang=ht]:before {content: "Haitian Creole";}
+.kl_mce_visual_blocks *[lang=ha]:before {content: "Hausa";}
+.kl_mce_visual_blocks *[lang=he]:before {content: "Hebrew";}
+.kl_mce_visual_blocks *[lang=hz]:before {content: "Herero";}
+.kl_mce_visual_blocks *[lang=hi]:before {content: "Hindi";}
+.kl_mce_visual_blocks *[lang=ho]:before {content: "Hiri Motu";}
+.kl_mce_visual_blocks *[lang=hu]:before {content: "Hungarian";}
+.kl_mce_visual_blocks *[lang=is]:before {content: "Icelandic";}
+.kl_mce_visual_blocks *[lang=io]:before {content: "Ido";}
+.kl_mce_visual_blocks *[lang=ig]:before {content: "Igbo";}
+.kl_mce_visual_blocks *[lang=id]:before {content: "Indonesian";}
+.kl_mce_visual_blocks *[lang=ia]:before {content: "Interlingua";}
+.kl_mce_visual_blocks *[lang=ie]:before {content: "Interlingue";}
+.kl_mce_visual_blocks *[lang=iu]:before {content: "Inuktitut";}
+.kl_mce_visual_blocks *[lang=ik]:before {content: "Inupiak";}
+.kl_mce_visual_blocks *[lang=ga]:before {content: "Irish";}
+.kl_mce_visual_blocks *[lang=it]:before {content: "Italian";}
+.kl_mce_visual_blocks *[lang=ja]:before {content: "Japanese";}
+.kl_mce_visual_blocks *[lang=jv]:before {content: "Javanese";}
+.kl_mce_visual_blocks *[lang=kl]:before {content: "Kalaallisut, Greenlandic";}
+.kl_mce_visual_blocks *[lang=kn]:before {content: "Kannada";}
+.kl_mce_visual_blocks *[lang=kr]:before {content: "Kanuri";}
+.kl_mce_visual_blocks *[lang=ks]:before {content: "Kashmiri";}
+.kl_mce_visual_blocks *[lang=kk]:before {content: "Kazakh";}
+.kl_mce_visual_blocks *[lang=km]:before {content: "Khmer";}
+.kl_mce_visual_blocks *[lang=ki]:before {content: "Kikuyu";}
+.kl_mce_visual_blocks *[lang=rw]:before {content: "Kinyarwanda (Rwanda)";}
+.kl_mce_visual_blocks *[lang=rn]:before {content: "Kirundi";}
+.kl_mce_visual_blocks *[lang=ky]:before {content: "Kyrgyz";}
+.kl_mce_visual_blocks *[lang=kv]:before {content: "Komi";}
+.kl_mce_visual_blocks *[lang=kg]:before {content: "Kongo";}
+.kl_mce_visual_blocks *[lang=ko]:before {content: "Korean";}
+.kl_mce_visual_blocks *[lang=ku]:before {content: "Kurdish";}
+.kl_mce_visual_blocks *[lang=kj]:before {content: "Kwanyama";}
+.kl_mce_visual_blocks *[lang=lo]:before {content: "Lao";}
+.kl_mce_visual_blocks *[lang=la]:before {content: "Latin";}
+.kl_mce_visual_blocks *[lang=lv]:before {content: "Latvian (Lettish)";}
+.kl_mce_visual_blocks *[lang=li]:before {content: "Limburgish (Limburger)";}
+.kl_mce_visual_blocks *[lang=ln]:before {content: "Lingala";}
+.kl_mce_visual_blocks *[lang=lt]:before {content: "Lithuanian";}
+.kl_mce_visual_blocks *[lang=lu]:before {content: "Luga-Katanga";}
+.kl_mce_visual_blocks *[lang=lg]:before {content: "Luganda, Ganda";}
+.kl_mce_visual_blocks *[lang=lb]:before {content: "Luxembourgish";}
+.kl_mce_visual_blocks *[lang=gv]:before {content: "Manx";}
+.kl_mce_visual_blocks *[lang=mk]:before {content: "Macedonian";}
+.kl_mce_visual_blocks *[lang=mg]:before {content: "Malagasy";}
+.kl_mce_visual_blocks *[lang=ms]:before {content: "Malay";}
+.kl_mce_visual_blocks *[lang=ml]:before {content: "Malayalam";}
+.kl_mce_visual_blocks *[lang=mt]:before {content: "Maltese";}
+.kl_mce_visual_blocks *[lang=mi]:before {content: "Maori";}
+.kl_mce_visual_blocks *[lang=mr]:before {content: "Marathi";}
+.kl_mce_visual_blocks *[lang=mh]:before {content: "Marshallese";}
+.kl_mce_visual_blocks *[lang=mo]:before {content: "Moldavian";}
+.kl_mce_visual_blocks *[lang=mn]:before {content: "Mongolian";}
+.kl_mce_visual_blocks *[lang=na]:before {content: "Nauru";}
+.kl_mce_visual_blocks *[lang=nv]:before {content: "Navajo";}
+.kl_mce_visual_blocks *[lang=ng]:before {content: "Ndonga";}
+.kl_mce_visual_blocks *[lang=nd]:before {content: "Northern Ndebele";}
+.kl_mce_visual_blocks *[lang=ne]:before {content: "Nepali";}
+.kl_mce_visual_blocks *[lang=no]:before {content: "Norwegian";}
+.kl_mce_visual_blocks *[lang=nb]:before {content: "Norwegian bokmål";}
+.kl_mce_visual_blocks *[lang=nn]:before {content: "Norwegian nynorsk";}
+.kl_mce_visual_blocks *[lang=ii]:before {content: "Nuosu";}
+.kl_mce_visual_blocks *[lang=oc]:before {content: "Occitan";}
+.kl_mce_visual_blocks *[lang=oj]:before {content: "Ojibwe";}
+.kl_mce_visual_blocks *[lang=cu]:before {content: "Old Church Slavonic, Old Bulgarian";}
+.kl_mce_visual_blocks *[lang=or]:before {content: "Oriya";}
+.kl_mce_visual_blocks *[lang=om]:before {content: "Oromo (Afaan Oromo)";}
+.kl_mce_visual_blocks *[lang=os]:before {content: "Ossetian";}
+.kl_mce_visual_blocks *[lang=pi]:before {content: "Pāli";}
+.kl_mce_visual_blocks *[lang=ps]:before {content: "Pashto, Pushto";}
+.kl_mce_visual_blocks *[lang=fa]:before {content: "Persian (Farsi)";}
+.kl_mce_visual_blocks *[lang=pl]:before {content: "Polish";}
+.kl_mce_visual_blocks *[lang=pt]:before {content: "Portuguese";}
+.kl_mce_visual_blocks *[lang=pa]:before {content: "Punjabi (Eastern)";}
+.kl_mce_visual_blocks *[lang=qu]:before {content: "Quechua";}
+.kl_mce_visual_blocks *[lang=rm]:before {content: "Romansh";}
+.kl_mce_visual_blocks *[lang=ro]:before {content: "Romanian";}
+.kl_mce_visual_blocks *[lang=ru]:before {content: "Russian";}
+.kl_mce_visual_blocks *[lang=se]:before {content: "Sami";}
+.kl_mce_visual_blocks *[lang=sm]:before {content: "Samoan";}
+.kl_mce_visual_blocks *[lang=sg]:before {content: "Sango";}
+.kl_mce_visual_blocks *[lang=sa]:before {content: "Sanskrit";}
+.kl_mce_visual_blocks *[lang=sr]:before {content: "Serbian";}
+.kl_mce_visual_blocks *[lang=sh]:before {content: "Serbo-Croatian";}
+.kl_mce_visual_blocks *[lang=st]:before {content: "Sesotho";}
+.kl_mce_visual_blocks *[lang=tn]:before {content: "Setswana";}
+.kl_mce_visual_blocks *[lang=sn]:before {content: "Shona";}
+.kl_mce_visual_blocks *[lang=ii]:before {content: "Sichuan Yi";}
+.kl_mce_visual_blocks *[lang=sd]:before {content: "Sindhi";}
+.kl_mce_visual_blocks *[lang=si]:before {content: "Sinhalese";}
+.kl_mce_visual_blocks *[lang=ss]:before {content: "Siswati";}
+.kl_mce_visual_blocks *[lang=sk]:before {content: "Slovak";}
+.kl_mce_visual_blocks *[lang=sl]:before {content: "Slovenian";}
+.kl_mce_visual_blocks *[lang=so]:before {content: "Somali";}
+.kl_mce_visual_blocks *[lang=nr]:before {content: "Southern Ndebele";}
+.kl_mce_visual_blocks *[lang=es]:before {content: "Spanish";}
+.kl_mce_visual_blocks *[lang=su]:before {content: "Sundanese";}
+.kl_mce_visual_blocks *[lang=sw]:before {content: "Swahili (Kiswahili)";}
+.kl_mce_visual_blocks *[lang=ss]:before {content: "Swati";}
+.kl_mce_visual_blocks *[lang=sv]:before {content: "Swedish";}
+.kl_mce_visual_blocks *[lang=tl]:before {content: "Tagalog";}
+.kl_mce_visual_blocks *[lang=ty]:before {content: "Tahitian";}
+.kl_mce_visual_blocks *[lang=tg]:before {content: "Tajik";}
+.kl_mce_visual_blocks *[lang=ta]:before {content: "Tamil";}
+.kl_mce_visual_blocks *[lang=tt]:before {content: "Tatar";}
+.kl_mce_visual_blocks *[lang=te]:before {content: "Telugu";}
+.kl_mce_visual_blocks *[lang=th]:before {content: "Thai";}
+.kl_mce_visual_blocks *[lang=bo]:before {content: "Tibetan";}
+.kl_mce_visual_blocks *[lang=ti]:before {content: "Tigrinya";}
+.kl_mce_visual_blocks *[lang=to]:before {content: "Tonga";}
+.kl_mce_visual_blocks *[lang=ts]:before {content: "Tsonga";}
+.kl_mce_visual_blocks *[lang=tr]:before {content: "Turkish";}
+.kl_mce_visual_blocks *[lang=tk]:before {content: "Turkmen";}
+.kl_mce_visual_blocks *[lang=tw]:before {content: "Twi";}
+.kl_mce_visual_blocks *[lang=ug]:before {content: "Uyghur";}
+.kl_mce_visual_blocks *[lang=uk]:before {content: "Ukrainian";}
+.kl_mce_visual_blocks *[lang=ur]:before {content: "Urdu";}
+.kl_mce_visual_blocks *[lang=uz]:before {content: "Uzbek";}
+.kl_mce_visual_blocks *[lang=ve]:before {content: "Venda";}
+.kl_mce_visual_blocks *[lang=vi]:before {content: "Vietnamese";}
+.kl_mce_visual_blocks *[lang=vo]:before {content: "Volapük";}
+.kl_mce_visual_blocks *[lang=wa]:before {content: "Wallon";}
+.kl_mce_visual_blocks *[lang=cy]:before {content: "Welsh";}
+.kl_mce_visual_blocks *[lang=wo]:before {content: "Wolof";}
+.kl_mce_visual_blocks *[lang=fy]:before {content: "Western Frisian";}
+.kl_mce_visual_blocks *[lang=xh]:before {content: "Xhosa";}
+.kl_mce_visual_blocks *[lang=yi]:before {content: "Yiddish";}
+.kl_mce_visual_blocks *[lang=yo]:before {content: "Yoruba";}
+.kl_mce_visual_blocks *[lang=za]:before {content: "Zhuang, Chuang";}
+.kl_mce_visual_blocks *[lang=zu]:before {content: "Zulu";}
+/* Image Gallery */
+.kl_mce_visual_blocks .kl_popup_gallery, .kl_mce_visual_blocks .kl_popup_image {
+    outline: 1px dashed #7e7e7e !important;
+    position: relative;
+}
+.kl_mce_visual_blocks .kl_popup_gallery:before {
+    content: "Popup Gallery";
+    display: inline-block;
+    padding: .5em .4em;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    text-shadow: none;
+    font-style: normal;
+    font-size: 10px;
+    background:#7e7e7e;
+    position:absolute;
+}
+/* Text Area */
+.kl_textarea {
+	border: 1px solid #cccccc;
+    border-radius: 3px;
+    padding: 7px 10px;
+    background: #FFF;
+    position: relative;
+}
+.kl_mce_visual_blocks .kl_textarea:before {
+    content: "Text Area";
+    display: inline-block;
+    padding: .5em .4em;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    text-shadow: none;
+    font-style: normal;
+    font-size: 10px;
+    background:#7e7e7e;
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+.kl_mce_visual_blocks .kl_textarea {
+	padding-top: 20px;
+}
+
+.kl_has_style:not(.kl_mce_view_browser):not(.kl_mce_view_app) .kl_editor_notice_block,
+.kl_has_style:not(.kl_mce_view_browser):not(.kl_mce_view_app) .kl_instructions_block {
+	outline-color: #b39ddb !important;
+	outline-width: 2px !important;
+	outline-style: solid !important;
+	padding: 5px;
+	padding-top: 20px;
+	position: relative;
+}
+.kl_has_style:not(.kl_mce_view_browser):not(.kl_mce_view_app) .kl_editor_notice_block {
+	outline-color: #ff8f00 !important;
+}
+.kl_has_style:not(.kl_mce_view_browser):not(.kl_mce_view_app) .kl_editor_notice_block:before,
+.kl_has_style:not(.kl_mce_view_browser):not(.kl_mce_view_app) .kl_instructions_block:before {
+	content: "Editor Only Instructions:";
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	background: #b39ddb;
+	color: #000;
+	padding: 0 5px;
+	font-size: 12px;
+}
+.kl_has_style:not(.kl_mce_view_browser):not(.kl_mce_view_app) .kl_editor_notice_block:before{
+	content: "Editor Only Notice:";
+	background: #ff8f00;
+}
+.kl_has_style:not(.kl_mce_view_browser):not(.kl_mce_view_app) .kl_instructions_inline:before {
+	content: "Editor Prompt";
+	position: relative;
+	display:  inline-block;
+	background: #827717;
+	color:  white;
+	font-size: 0.8em;
+	padding: 2px 8px 1px;  
+	margin-right: 5px;
+}
+.kl_has_style:not(.kl_mce_view_browser):not(.kl_mce_view_app) .kl_instructions_inline {
+	background: #ffeb3b;
+	color: #000;
+	padding: 1px 5px 1px 0;
+	outline:  none !important;
+	border-bottom: 2px solid #827717;
+}
+.kl_has_style:not(.kl_mce_view_browser):not(.kl_mce_view_app) .kl_instructions_inline {
+	display: inline !important;
+}
+.kl_has_style:not(.kl_mce_view_browser):not(.kl_mce_view_app) .kl_editor_notice_block,
+.kl_has_style:not(.kl_mce_view_browser):not(.kl_mce_view_app) .kl_instructions_block {
+	display: block !important;
+}
+.kl_has_style:not(.kl_mce_view_browser):not(.kl_mce_view_app) .kl_instructions_inline.kl_locked:before {
+	content: "Editor Prompt (locked)";
+}
+.kl_has_style:not(.kl_mce_view_browser):not(.kl_mce_view_app) .kl_instructions_block.kl_locked:before {
+	content: "Editor Only Instructions (locked):";
+}
+
+/*Placeholders*/
+.kl_date_placeholder,
+.kl_date_time_placeholder,
+.kl_time_placeholder,
+.kl_user_short_name_placeholder,
+.kl_user_name_placeholder {
+    color: #d20000;
+    font-style: italic;
+    display: inline !important;
+}
+
+/* Hidden Gem Checkbox and Radio */
+.kl_has_style .kl_checkbox_input,
+.kl_has_style .kl_radio_input {
+	cursor: pointer;
+}
+.kl_has_style.kl_mce_view_browser .kl_checkbox_input.kl_hide_label,
+.kl_has_style.kl_mce_view_browser .kl_radio_input.kl_hide_label,
+.kl_has_style.kl_mce_view_app .kl_checkbox_input.kl_hide_label,
+.kl_has_style.kl_mce_view_app .kl_radio_input.kl_hide_label {
+	width: 20px;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: text-bottom;
+}
+.kl_has_style:not(.kl_mce_view_browser):not(.kl_mce_view_app) .kl_checkbox_input,
+.kl_has_style:not(.kl_mce_view_browser):not(.kl_mce_view_app) .kl_radio_input {
+    outline: 1px dashed #777777;
+    padding: 0 3px;
+}
+.kl_has_style .kl_checkbox_input:before {
+	content: '\2611';
+	font-size: 1.75rem;
+	line-height:  1rem;
+	margin-right: 0.25rem;
+}
+.kl_has_style .kl_radio_input:before {
+	content: '\25EF';
+    margin-right: 0.5rem;
+}
+
+/* Canvas button background overrides */
+#tinymce.mce-content-body .Button--primary[data-mce-selected=inline-boundary] {
+    background: var(--ic-brand-button--primary-bgd);
+    color: var(--ic-brand-button--primary-text);
+    border: 1px solid;
+    border-color: var(--ic-brand-button--primary-bgd-darkened-15);
+}
+#tinymce.mce-content-body .Button--secondary[data-mce-selected=inline-boundary] {
+    background: var(--ic-brand-button--secondary-bgd);
+    color: var(--ic-brand-button--secondary-text);
+    border: 1px solid;
+    border-color: var(--ic-brand-button--secondary-bgd-darkened-15);
+}

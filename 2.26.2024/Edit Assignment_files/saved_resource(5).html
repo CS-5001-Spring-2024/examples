@@ -1,0 +1,52 @@
+
+<!-- saved from url=(0012)about:srcdoc -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css" id="ally-style">body {background-color: #876543;color: #876543;font-size: 12 pt;}</style><title>A fragment</title></head>
+                <body id="frame_body" onload="window.body_loaded = true">
+                    <div id="html_feedback_page">
+                        <p><strong>Due - Monday, March 21, 2024&nbsp;<br></strong><em>You may submit early if you wish to have more time to study for your exam :)</em></p>
+<hr>
+<p>In this assignment you will practice with classes and objects.</p>
+<hr>
+<h4><strong>Lab Setup</strong></h4>
+<p>For this assignment, you will create a new Lab 8 GitHub repository using the following GitHub classroom link:</p>
+<p><a class="inline_disabled" href="https://classroom.github.com/a/dSR-WiT3" target="_blank" rel="noopener"></a><a class="inline_disabled" href="https://classroom.github.com/a/JRC3z6Wy" target="_blank" rel="noopener noreferrer">https://classroom.github.com/a/JRC3z6Wy</a></p>
+<hr>
+<h4><span><strong>Grade Book, Revisited<br>[50 points]</strong></span></h4>
+<p>For this assignment, you will revisit your Grade Book program from Lab 7 to use a <code>Student</code> class and a <code>Student_List</code> class.</p>
+<h4><strong><code>Student</code></strong></h4>
+<p>The <code>Student</code> class will have instance variables to keep track of the student's name (str), id (int), and grades (list[float]). The class will implement the following methods that are described in the skeleton code in the Lab 8 repository: <code>add_grade</code>, <code>get_average</code>, and <code>get_letter_grade</code>.</p>
+<h4><strong><code>Student_List</code></strong></h4>
+<p>The <code>Student_List</code> class will have instance variables to keep track of the name of the course (str), and students (dict[int, Student]). The class will implement the following methods that are described in the skeleton code in the Lab 8 repository: <code>add_student</code>, <code>update_student</code>, <code>get_student_average</code>, <code>get_student_letter_grade</code>.</p>
+<h4><strong>User Interface</strong></h4>
+<p>You will implement a <em>grade_book.py</em> program that will, at minimum, implement the functionality from Lab 7 as described below.&nbsp;</p>
+<ol style="list-style-type: decimal;">
+<li>The user may record data for as many students as they would like.&nbsp; After each student, the program will ask "Would you like to record scores for another student? (y/n)". As long as the user says 'y' the program will continue.</li>
+<li>The user may record as many scores as they wish for each student. When they are finished entering scores for a student they will enter -1 to end input.</li>
+<li>The program must handle invalid user input at any stage. This includes (1) score is not a floating point number; (2) user does not enter 'y/n' when asked if they want to enter scores for another student.</li>
+<li>Invalid input will be handled by asking the user to enter input again.</li>
+</ol>
+<p>The output of your program will look as follows:</p>
+<pre class="p1"><span class="s1">% python3 grade_book.py</span><br><span class="s1">What is the name of the next student? Pari</span><br><span class="s1">Enter next score for Pari or -1 to end input: 98</span><br><span class="s1">Enter next score for Pari or -1 to end input: cow</span><br><span class="s1">Scores must be floating point numbers.</span><br><span class="s1">Enter next score for Pari or -1 to end input: 78.5</span><br><span class="s1">Enter next score for Pari or -1 to end input: 67</span><br><span class="s1">Enter next score for Pari or -1 to end input: 99</span><br><span class="s1">Enter next score for Pari or -1 to end input: -1</span><br><br><span class="s1">Would you like to record scores for another student? (y/n) bird</span><br><span class="s1">Invalid input. Answer must be y or n.</span><br><span class="s1">Would you like to record scores for another student? (y/n) dog</span><br><span class="s1">Invalid input. Answer must be y or n.</span><br><span class="s1">Would you like to record scores for another student? (y/n) yes</span><br><span class="s1">Invalid input. Answer must be y or n.</span><br><span class="s1">Would you like to record scores for another student? (y/n) maybe</span><br><span class="s1">Invalid input. Answer must be y or n.</span><br><span class="s1">Would you like to record scores for another student? (y/n) dunno</span><br><span class="s1">Invalid input. Answer must be y or n.</span><br><span class="s1">Would you like to record scores for another student? (y/n) y</span><br><br><span class="s1">What is the name of the next student? Igor</span><br><span class="s1">Enter next score for Igor or -1 to end input: dog</span><br><span class="s1">Scores must be floating point numbers.</span><br><span class="s1">Enter next score for Igor or -1 to end input: 98</span><br><span class="s1">Enter next score for Igor or -1 to end input: 97</span><br><span class="s1">Enter next score for Igor or -1 to end input: 34</span><br><span class="s1">Enter next score for Igor or -1 to end input: -1</span><br><br><span class="s1">Would you like to record scores for another student? (y/n) n</span><br><br><span class="s1">Pari</span><br><br><span class="s1"> 98.0 78.5 67.0 99.0<span class="Apple-converted-space">&nbsp;</span></span><br><br><span class="s1">Igor</span><br><br><span class="s1"> 98.0 97.0 34.0<span class="Apple-converted-space">&nbsp;</span></span></pre>
+<p><strong>Submission: </strong>This program must be submitted in a file called <em>grade_book.py</em> in your Lab 7 repository.</p>
+<hr>
+<h4><span><strong>Question 2 - Depth<br>[25 points]</strong></span></h4>
+<p>Write a <em><strong>recursive</strong></em> function called&nbsp;<strong>depth</strong> that takes as input a dictionary and returns the depth of nested dictionaries inside of the input data structure.&nbsp;</p>
+<p>Below are three examples of depth 1, depth 2, and depth 4, respectively.</p>
+<p>For this exercise, you are only required to consider dictionaries that appear as values inside of other dictionaries. You do not need to consider dictionaries inside of other structures, e.g., a dictionary that appears inside of a list.</p>
+<pre>depth_1 = {<br>&nbsp; &nbsp; "key1": 34,<br>&nbsp; &nbsp; "key2": "fish"<br>}<br><br>depth_2 = {<br>&nbsp; &nbsp; "key1": {<br>&nbsp; &nbsp; &nbsp; &nbsp; "key3": 34,<br>&nbsp; &nbsp; &nbsp; &nbsp; "key4": 56<br>&nbsp; &nbsp; },<br>&nbsp; &nbsp; "key2": "fish"<br>}<br><br>depth_4 = {<br>&nbsp; &nbsp; "key1": {<br>&nbsp; &nbsp; &nbsp; &nbsp; "key2": "value1",<br>&nbsp; &nbsp; &nbsp; &nbsp; "key3": [1, 2, 3] &nbsp; &nbsp; &nbsp; &nbsp;<br>&nbsp; &nbsp; },<br>&nbsp; &nbsp; "key4": {<br>&nbsp; &nbsp; &nbsp; &nbsp; "key5": {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "key6": {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "key8": "fish"<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>&nbsp; &nbsp; &nbsp; &nbsp; },<br>&nbsp; &nbsp; &nbsp; &nbsp; "key7": 34<br>&nbsp; &nbsp; }<br>}<br><br></pre>
+<hr>
+<h4><strong>Assignment Submission</strong></h4>
+<p>To earn credit for this assignment you&nbsp;<em><strong>must<span>&nbsp;</span></strong></em>commit all of your changes to your GitHub repository prior to the deadline. It is&nbsp;<em><strong>strongly&nbsp;</strong></em>recommended that you commit your changes regularly. Do not wait until you complete all four parts of the assignment to upload your (partial) solution.</p>
+<p><strong>Step 1:<span>&nbsp;</span></strong>If you are using GitHub Desktop, select "Commit to<span>&nbsp;</span><strong>main</strong>" at the bottom left. Make sure to provide a meaningful Summary and Description.&nbsp;</p>
+<p><strong>Step 2:</strong><span>&nbsp;</span>Select the "Push origin" button. This is&nbsp;<em><strong>extremely important</strong></em><em><span>&nbsp;</span></em>as your changes will not be reflected on GitHub until you complete this step.</p>
+<p><strong>Step 3:&nbsp;</strong>Using your web browser, navigate to your repository on GitHub.com. Look at your .py files in the browser to make sure they are the most recent version.</p>
+                    </div>
+                
+                 <script id="configuration" type="text/javascript">
+                        window.configureAX = function() {
+                            axe.configure({"allowedOrigins":["<same_origin>"],"checks":[{"evaluate":"function() { return window.allyHeadingsPresence(); }","id":"ally-headings-presence"},{"id":"color-contrast","options":{"boldTextPt":14,"boldValue":700,"contrastRatio":{"large":{"expected":3},"normal":{"expected":4.5}},"ignoreLength":true,"ignorePseudo":false,"ignoreUnicode":false,"largeTextPt":18,"shadowOutlineEmMax":0.1}}],"rules":[{"id":"empty-table-header","reviewOnFail":false},{"all":[],"any":["ally-headings-presence"],"excludeHidden":false,"id":"ally-headings-presence","impact":"critical","none":[],"selector":"#html_feedback_page","tags":["ally"]},{"id":"document-title","matches":"function() {return true;}"},{"id":"html-has-lang","matches":"function() {return true;}"},{"id":"ally-headings-presence","matches":"function() {return true;}"}]});
+                            window.axe_loaded = true;
+                        };
+                        </script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.7.2/axe.min.js" id="axe" onload="window.configureAX();">
+                        </script></body></html>
