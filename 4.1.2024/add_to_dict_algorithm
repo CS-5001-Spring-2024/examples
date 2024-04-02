@@ -1,0 +1,13 @@
+self.all_movies = []
+self.by_rating = {} # rating -> list[Movie]
+
+
+load_data(filename):
+  for each doc in file:
+    create a Movie object
+    append to list
+
+    if movie.rating not in self.by_rating:
+    	self.by_rating[movie.rating] = [movie]
+    else:
+    	self.by_rating[movie.rating].append(movie)
