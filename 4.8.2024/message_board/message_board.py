@@ -29,3 +29,14 @@ def messages():
 		message_list.append(new_message) 
 	# render using the message_board template in the templates directory
 	return render_template('message_board.html', items=message_list)
+
+@app.route('/message/<id>')
+def message(id):
+	print(id)
+	id = int(id)
+	message = message_list[id]
+	return f'Message Route: {message.message}'
+
+@app.route('/test/')
+def test():
+	return 'It works!'

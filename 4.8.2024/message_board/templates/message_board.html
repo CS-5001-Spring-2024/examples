@@ -4,7 +4,7 @@
   <h2>Messages:</h2>
    <ul>
      {% for item in items %}
-        <li>{{ item.message }}</li>
+        <li><a href="/message/{{}}">{{ item.message }}</a></li>
      {% endfor %}
    </ul>
 
@@ -13,5 +13,7 @@
     <input type="text" name="message"><br><br>
     <input type="submit" value="Post">
    </form> 
+
+   <a href='/test'>Test</a>
 
 </html>

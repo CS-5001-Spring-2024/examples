@@ -12,3 +12,4 @@ def hello():
 	all_visitors.append(name)
 	print(all_visitors)
 	return render_template('hello.html', name=name)
+
